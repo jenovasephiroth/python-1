@@ -92,6 +92,6 @@ RUN set -ex; \
 		\) -exec rm -rf '{}' +; \
 	rm -f get-pip.py
 
-RUN pip install Sphinx==1.3.6 requests pymongo==2.8 django==1.10.4 mongoengine==0.10.6 djangorestframework==3.2.4 django_rest_framework_mongoengine==3.3.1 django_mongoengine
+RUN pip install Sphinx==1.3.6 requests pymongo==2.8 pika pycryptodome django==1.10.4 mongoengine==0.10.6 djangorestframework==3.2.4 django_rest_framework_mongoengine==3.3.1 django_mongoengine
 
 CMD ["python3"]
